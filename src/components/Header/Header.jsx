@@ -24,6 +24,7 @@ const Header = ({
   const handleChange = (e) => {
     setWord("");
     setMeanings([]);
+    e.preventDefault();
   };
 
   const handleText = debounce((text) => {

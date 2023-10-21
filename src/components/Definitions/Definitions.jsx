@@ -17,18 +17,20 @@ const Definitions = ({ meanings, word, LightTheme }) => {
       {/* audio---------------------------- */}
 
       {word === "" ? (
-        <span className="subTitle">fetching
-          results...</span>
+        <span className="subTitle" key="fetching-results">
+          fetching results...
+        </span>
       ) : (
-        meanings.map((mean) =>
+        meanings.map((mean, index) =>
           mean.meanings.map((item) =>
-            item.definitions.map((def) => (
+            item.definitions.map((def, index2) => (
               <div
                 className="definitions"
                 style={{
                   backgroundColor: LightTheme ? "#3b5360" : "ghostwhite",
                   color: LightTheme ? "ghostwhite" : "black",
                 }}
+                key={`${index}-${index2}`}
               >
                 <b>{def.definition}</b>
                 <hr style={{ backgroundColor: "black", width: "100%" }} />
@@ -39,7 +41,9 @@ const Definitions = ({ meanings, word, LightTheme }) => {
                 )}
                 {def.synonyms && (
                   <span>
-                    <b>Synonyms :</b> {def.synonyms.map((s) => `${s}, `)}
+                    <b>Synonyms :</b> {def.synonyms.map((s, index3) => (
+                      <span key={`${index}-${index2}-${index3}`}>{`${s}, `}</span>
+                    ))}
                   </span>
                 )}
               </div>
