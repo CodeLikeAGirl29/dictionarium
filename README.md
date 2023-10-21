@@ -1,5 +1,6 @@
-
 # Dictionarium
+
+> Live link can be found [here](http://dictionarium.vercel.app/)
 
 __Dictionarium__ is a comprehensive and user-friendly online dictionary API search site designed to provide users with easy access to a vast repository of word meanings, definitions, translations, synonyms, examples, and related information. Here's a detailed description of the Dictionarium dictionary API search site:
 
