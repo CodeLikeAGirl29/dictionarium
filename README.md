@@ -1,5 +1,6 @@
-
 # Dictionarium
+
+> Live link can be found [here](http://dictionarium.vercel.app/)
 
 __Dictionarium__ is a comprehensive and user-friendly online dictionary API search site designed to provide users with easy access to a vast repository of word meanings, definitions, translations, synonyms, examples, and related information. Here's a detailed description of the Dictionarium dictionary API search site:
 
@@ -33,11 +34,16 @@ Dictionarium is committed to expanding your vocabulary, helping you communicate 
 
 ## Tech
 
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 ![material-ui](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
 
 ![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+![tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 ## Demo
 
 ![screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1697906764/projects/Word-Hunt_y3u7d1.png)
