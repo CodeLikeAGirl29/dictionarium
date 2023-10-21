@@ -1,0 +1,80 @@
+.header {
+  font-family: 'Vina Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 25vh;
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .header {
+    justify-content: space-evenly;
+    height: 15vh;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.inputs {
+  display: block;
+  width: 60%;
+  position: relative;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+
+.inputs input:focus ~ label,
+.inputs input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+
+label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.inputs .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 70%;
+}
+.inputs .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.inputs input:focus ~ .underline:before,
+.inputsinput:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+
+.search {
+  width: 43%;
+}
+
+.select {
+  width: 43%;
+}
